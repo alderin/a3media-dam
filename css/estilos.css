@@ -1,3 +1,7 @@
+.topcoat-navigation-bar__item > .topcoat-button{
+	margin:10px;
+}
+
 .topcoat-icon {
   font-size: 1.55rem;
 }
