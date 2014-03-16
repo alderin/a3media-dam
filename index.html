@@ -1,63 +1,205 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
-		<link href="css/topcoat-mobile-light.css" rel="stylesheet">
-		<link href="css/estilos.css" rel="stylesheet">
-		<link rel="stylesheet" href="font/icomatic.css"/>
-	</head>
-	
-	<body>
-	</body>
-	<head>
-		<meta name="viewport"  content="width=device-width, user-scalable=no">
-	</head>
-	<body>
-		
-		<header class="topcoat-navigation-bar full">
-			<div class="topcoat-navigation-bar__item left quarter">
-				<button class="topcoat-icon-button--quiet">
-				<span class="topcoat-icon icomatic icon">back</span>
-				</button>
-			</div>
-			<div class="topcoat-navigation-bar__item center half reset-ui">
-					<img src="img/logo.png">
-					<h1 class="topcoat-navigation-bar__title">A3MEDIA</h1>
-			</div>
-			<div class="topcoat-navigation-bar__item right quarter">
-				<button class="topcoat-button">
-				Directos
-				</button>
-			</div>
-		</header>
-		<div class="topcoat-tab-bar full">
-			<label class="topcoat-tab-bar__item">
-				<input type="radio" name="tab-bar">
-				<button class="topcoat-tab-bar__button full">Canales</button>
-			</label>
-			<label class="topcoat-tab-bar__item ">
-				<input type="radio" name="tab-bar">
-				<button class="topcoat-tab-bar__button full">Favoritos</button>
-			</label>
-			<label class="topcoat-tab-bar__item">
-				<input type="radio" name="tab-bar">
-				<button class="topcoat-tab-bar__button full">Series</button>
-			</label>
-		</div>
-		
-		<div class="topcoat-list list">
-			<h3 class="topcoat-list__header">Antena 3</h3>
-			<ul class="topcoat-list__container">
-				<li class="topcoat-list__item">
-					<img class="imagen"src="img/logo.png">	<h5 class="contenido-canal"> SDAFFASDFasdfdfdfadsfsadfafddddASDAFFASDFasdfdfdfadsfsadfafdddfdddd </h5>
-				</li>
-				<li class="topcoat-list__item">
-					ASDAFFASDFasdfdfdfadsfsadfafdddd
-				</li>
-				<li class="topcoat-list__item">
-					ASDAFFASDFasdfdfdfadsfsadfafdddd
-				</li>
-			</ul>
-		</div>
-	</body>
+
+<head>
+    <title>A3Media - DAM</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="css/topcoat-mobile-light.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="font/icomatic.css" />
+    <script src="js/jquery-1.11.0.min.js">
+    </script>
+    <script src="js/a3media.js"></script>
+</head>
+
+<body>
+    <header class="topcoat-navigation-bar full">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <button class="topcoat-icon-button--quiet">
+                <span class="topcoat-icon icomatic icon">back</span>
+            </button>
+        </div>
+        <div class="topcoat-navigation-bar__item center half reset-ui">
+            <img src="img/logo.png">
+            <h1 class="topcoat-navigation-bar__title">A3MEDIA</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <button class="topcoat-button">
+                Directos
+            </button>
+        </div>
+    </header>
+    <div class="topcoat-tab-bar full">
+        <label class="topcoat-tab-bar__item">
+            <input type="radio" name="tab-bar">
+            <button class="topcoat-tab-bar__button full" onclick="verCanales()">Canales</button>
+        </label>
+        <label class="topcoat-tab-bar__item ">
+            <input type="radio" name="tab-bar">
+            <button class="topcoat-tab-bar__button full" onclick="verFavoritos()">Favoritos</button>
+        </label>
+        <label class="topcoat-tab-bar__item">
+            <input type="radio" name="tab-bar">
+            <button class="topcoat-tab-bar__button full" onclick="verSeries()">Series</button>
+        </label>
+    </div>
+
+    <div class="topcoat-list list" id="canales">
+        <h3 class="topcoat-list__header">Antena 3</h3>
+        <ul class="topcoat-list__container">
+            <li class="topcoat-list__item">
+                <img class="imagen" src="img/logo.png">
+                <h5 class="contenido-canal">SDAFFASDFasdfdfdfadsfs</h5>
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Canales
+            </li>
+        </ul>
+    </div>
+
+    <div class="topcoat-list list" id="favoritos">
+        <h3 class="topcoat-list__header">Programas Favoritos</h3>
+        <ul class="topcoat-list__container">
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Favoritos
+            </li>
+        </ul>
+    </div>
+
+    <div class="topcoat-list list" id="series">
+        <h3 class="topcoat-list__header">Series</h3>
+        <ul class="topcoat-list__container">
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+            <li class="topcoat-list__item">
+                Elemento Series
+            </li>
+        </ul>
+    </div>
+</body>
+
 </html>
