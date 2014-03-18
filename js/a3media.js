@@ -1,16 +1,16 @@
 var verCanales = function () {
     $("#series").hide();
     $("#favoritos").hide();
-    $("#canales").show("slow");
+    $("#canales").show("fast");
 };
 
 var verSeries = function () {
     $("#canales").hide();
     $("#favoritos").hide();
-    $("#series").show();
+    $("#series").show("fast");
 };
 var verFavoritos = function () {
     $("#canales").hide();
     $("#series").hide();
-    $("#favoritos").show();
+    $("#favoritos").show("fast");
 };
