@@ -9,6 +9,7 @@ topcoat*
 font/
 svg/
 js/jquery-1.11.0.min.js
-/css/estilos.min.css
-/css/estilos.css
-/css/_flex.scss
+css/estilos.min.css
+css/estilos.css
+css/_flex.scss
+js/a3media.min.js
