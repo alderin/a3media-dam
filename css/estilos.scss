@@ -1,20 +1,27 @@
 @import "flex";
+@import "topcoat-mobile-light.css";
+ $alto-caja:100px;
  .topcoat-list__item {
     @include flexbox;
+    padding: 1rem;
+    @include align-items(center);
     * {
-        align-items: center;
         flex-flow: column;
-        max-height: 100px;
+        @include flex-wrap(nowrap);
+        max-height: $alto-caja;
         list-style: none;
         justify-content: space-between;
     }
-    img {
-        order: 1;
+    img.imgIzquierda {
         flex-grow: 0;
+        order: 0;
+    }
+    img.imgDerecha {
+        order: 2;
         max-height: 100px;
     }
     h3 {
-        order: 2;
+        order: 1;
         flex: 1 auto;
         max-height: 100px;
     }
