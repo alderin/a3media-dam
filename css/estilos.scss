@@ -15,7 +15,7 @@
     }
     h3 {
         order: 1;
-        flex: 2 auto;
+        @include flex(2, auto);
         max-height: $alto-caja;
     }
     img.imgDerecha {
