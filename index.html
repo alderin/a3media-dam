@@ -3,7 +3,8 @@
 
 <head>
     <title>A3Media - DAM</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
     <link href="css/estilos.css" rel="stylesheet">
     <link rel="stylesheet" href="font/icomatic.css" />
     <script src="js/jquery-1.11.0.min.js"></script>
@@ -12,14 +13,16 @@
 
 <body>
     <header class="topcoat-navigation-bar full">
-        <div class="topcoat-navigation-bar__item left quarter">
-            <button class="topcoat-icon-button--quiet">
+        <div class="topcoat-navigation-bar__item left quarter ">
+            <button class="topcoat-icon-button--quiet" style="display:none">
                 <span class="topcoat-icon icomatic icon">back</span>
             </button>
         </div>
-        <div class="topcoat-navigation-bar__item center half reset-ui">
-            <img src="img/logo.png">
-            <h1 class="topcoat-navigation-bar__title">A3MEDIA</h1>
+        <div class="topcoat-navigation-bar__item center half reset-ui ">
+            <div class="titulo">
+                <img src="img/logo.png">
+                <h1 class="">A3MEDIA</h1>
+            </div>
         </div>
         <div class="topcoat-navigation-bar__item right quarter">
             <button class="topcoat-button">
@@ -46,60 +49,28 @@
         <h3 class="topcoat-list__header">Antena 3</h3>
         <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                <img class="imgIzquierda" src="img/logo.png">
-                <h3 class="contenido-canal center">La que se avecina</h3>
-                <h3 class="contenido-canal center">Ahora</h3>
+                <img class="imgIzquierda" src="img/Antena3_Atresmedia.png">
+                <h3 class="contenido-canal center">La que se avecina
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
                 <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
+        </ul>
+        <h3 class="topcoat-list__header">La Sexta</h3>
+        <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Canales
+                <img class="imgIzquierda" src="img/lasexta.png">
+                <h3 class="contenido-canal center">Salvados
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
+                <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
         </ul>
     </div>
 
-    <div class="topcoat-list list" id="favoritos">
+    <div class="topcoat-list list" id="favoritos" style="display:none">
         <h3 class="topcoat-list__header">Programas Favoritos</h3>
         <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
@@ -150,7 +121,7 @@
         </ul>
     </div>
 
-    <div class="topcoat-list list" id="series">
+    <div class="topcoat-list list" id="series" style="display:none">
         <h3 class="topcoat-list__header">Series</h3>
         <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
