@@ -18,30 +18,30 @@
                 <span class="topcoat-icon icomatic icon">back</span>
             </button>
         </div>
-        <div class="topcoat-navigation-bar__item center half reset-ui ">
+        <div class="topcoat-navigation-bar__item center half reset-ui">
             <div class="titulo">
                 <img src="img/logo.png">
                 <h1 class="">A3MEDIA</h1>
             </div>
         </div>
         <div class="topcoat-navigation-bar__item right quarter">
-            <button class="topcoat-button">
-                Directos
+            <button class="topcoat-button" onclick="verDirectos()">
+                <span class="topcoat-icon icomatic icon" id="botonDirecto" >circle</span>
             </button>
         </div>
     </header>
     <div class="topcoat-tab-bar full">
-        <label class="topcoat-tab-bar__item">
+        <label class="topcoat-tab-bar__item" onclick="verCanales()">
             <input type="radio" name="tab-bar">
-            <button class="topcoat-tab-bar__button full" onclick="verCanales()">Canales</button>
+            <button class="topcoat-tab-bar__button full" >Canales</button>
         </label>
-        <label class="topcoat-tab-bar__item ">
+        <label class="topcoat-tab-bar__item"  onclick="verFavoritos()">
             <input type="radio" name="tab-bar">
-            <button class="topcoat-tab-bar__button full" onclick="verFavoritos()">Favoritos</button>
+            <button class="topcoat-tab-bar__button full">Favoritos</button>
         </label>
-        <label class="topcoat-tab-bar__item">
+        <label class="topcoat-tab-bar__item" onclick="verSeries()">
             <input type="radio" name="tab-bar">
-            <button class="topcoat-tab-bar__button full" onclick="verSeries()">Series</button>
+            <button class="topcoat-tab-bar__button full" >Series</button>
         </label>
     </div>
 
@@ -68,109 +68,62 @@
                 <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
         </ul>
+
     </div>
 
     <div class="topcoat-list list" id="favoritos" style="display:none">
-        <h3 class="topcoat-list__header">Programas Favoritos</h3>
+        <h3 class="topcoat-list__header">Antena 3</h3>
         <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                Elemento Favoritos
+                <img class="imgIzquierda" src="img/salvados.jpg">
+                <h3 class="contenido-canal center">La que se avecina
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
+                <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
+        </ul>
+        <h3 class="topcoat-list__header">La Sexta</h3>
+        <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Favoritos
+                <img class="imgIzquierda" src="img/lasexta.png">
+                <h3 class="contenido-canal center">Salvados
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
+                <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
         </ul>
     </div>
 
     <div class="topcoat-list list" id="series" style="display:none">
-        <h3 class="topcoat-list__header">Series</h3>
+        <h3 class="topcoat-list__header">Antena 3</h3>
         <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                Elemento Series
+                <img class="imgIzquierda" src="img/Antena3_Atresmedia.png">
+                <h3 class="contenido-canal center">La que se avecina
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
+                <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
+        </ul>
+        <h3 class="topcoat-list__header">La Sexta</h3>
+        <ul class="topcoat-list__container">
             <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
-            </li>
-            <li class="topcoat-list__item">
-                Elemento Series
+                <img class="imgIzquierda" src="img/lasexta.png">
+                <h3 class="contenido-canal center">Salvados
+                    <br>
+                    <br>Emisión: Ahora
+                </h3>
+                <img class="imgDerecha" src="img/star-favorite-md.png">
             </li>
         </ul>
     </div>
+    <div id="directos" style="display:none">
+        <h1>sadfasdfasdf</h1>
+    </div>
+
 </body>
 
 </html>
