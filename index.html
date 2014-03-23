@@ -13,8 +13,8 @@
 
 <body>
     <header class="topcoat-navigation-bar full">
-        <div class="topcoat-navigation-bar__item left quarter ">
-            <button class="topcoat-icon-button--quiet" style="display:none">
+        <div class="topcoat-navigation-bar__item left quarter" >
+            <button class="topcoat-icon-button--quiet" style="display:none" id="botonAtras" onclick="volver()">
                 <span class="topcoat-icon icomatic icon">back</span>
             </button>
         </div>
@@ -25,12 +25,12 @@
             </div>
         </div>
         <div class="topcoat-navigation-bar__item right quarter">
-            <button class="topcoat-button" onclick="verDirectos()">
-                <span class="topcoat-icon icomatic icon" id="botonDirecto" >circle</span>
+            <button class="topcoat-button" onclick="verDirectos()" id="botonDirectos" >
+                <span class="topcoat-icon icomatic icon" >circle</span>
             </button>
         </div>
     </header>
-    <div class="topcoat-tab-bar full">
+    <div class="topcoat-tab-bar full" id="barraBotones">
         <label class="topcoat-tab-bar__item" onclick="verCanales()">
             <input type="radio" name="tab-bar">
             <button class="topcoat-tab-bar__button full" >Canales</button>

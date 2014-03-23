@@ -1,29 +1,25 @@
 var verCanales = function () {
-    $("#series").hide();
-    $("#favoritos").hide();
-    $("#directos").hide();
+    $("#series ,#favoritos, #directos,#botonAtras").hide();
     $("#botonDirectos").show();
     $("#canales").show("fast");
 };
 
 var verSeries = function () {
-    $("#canales").hide();
-    $("#favoritos").hide();
-    $("#directos").hide();
+    $("#canales,#favoritos,#directos,#botonAtras").hide();
     $("#botonDirectos").show();
     $("#series").show("fast");
 };
 var verFavoritos = function () {
-    $("#canales").hide();
-    $("#series").hide();
-    $("#directos").hide();
+    $("#canales,#series,#directos,#botonAtras").hide();
     $("#botonDirectos").show();
     $("#favoritos").show("fast");
 };
 var verDirectos = function () {
-    $("#canales").hide();
-    $("#series").hide();
-    $("#favoritos").hide();
-    $("#botonDirectos").hide();
+    $("#canales,#series,#favoritos,#botonDirectos, #barraBotones").hide();
+    $("#botonAtras").show();
     $("#directos").show("fast");
 };
+var volver = function(){
+    $("#barraBotones").show();
+    this.verCanales();
+}

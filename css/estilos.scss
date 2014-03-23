@@ -12,8 +12,7 @@
         max-height: 100%;
         @include flex-wrap(wrap);
         @include justify-content(space-between);
-          max-height: $alto-caja;
-
+        max-height: $alto-caja;
     }
     img.imgIzquierda {
         order: 0;
@@ -41,8 +40,10 @@
 }
 .topcoat-icon {
     font-size: 1.55rem;
-    &#botonDirecto{
-        color:red;
+}
+.topcoat-button {
+    &#botonDirectos {
+        color: red;
     }
 }
 .titulo {
