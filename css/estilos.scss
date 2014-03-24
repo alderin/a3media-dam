@@ -47,6 +47,16 @@
         color: red;
     }
 }
+#botonFavorito {
+    height: 4em;
+        width: 4em;
+    img{
+         max-height: 100%;
+        max-width: 100%;
+       padding:  1em 1em 1em 1em;
+        margin-left: -1em;
+    }
+}
 .titulo {
     h1 {
         margin: 0.45em 0;
@@ -55,13 +65,11 @@
 .reproductor {
     max-width: 100%;
     img {
-
         max-width: 100%;
         background-image: url("../img/alberto-chicote.jpg");
         background-size: cover;
     }
-    .descripcionDirecto{
+    .descripcionDirecto {
         word-wrap: break-word;
     }
 }
-
