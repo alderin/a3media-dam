@@ -26,11 +26,21 @@ var volver = function () {
     $("#barraBotones").show();
     this.verCanales();
 };
-var programas = '[{ "nombre" : "La que se avecina", "favorito" : false, "emision" : "ahora"},{ "nombre" : "Salvados", "favorito" : false, "emision" : "mañana"}]';
-var header = function (posicion, nombre) {
+var programas = '[{ "nombre" : "La que se avecina", "favorito" : false, "emision" : "ahora"},{ "nombre" : "Salvados", "favorito" : true, "emision" : "mañana"}]';
+
+function insertHeader(posicion, nombre) {
     var header = '<h3 class="topcoat-list__header">' + nombre + '</h3>';
     insertarCadena(posicion, header);
-};
+}
+
+function insertElementoLista(posicion, texto, izquierda, favorito) {
+    var lista = '<ul class="topcoat-list__container"> <li class="topcoat-list__item"><img class="imgIzquierda" src="' + izquierda + '"><h3 class="contenido-canal center">' + texto + ' <br> <br>Emisión: Ahora </h3><img class="imgDerecha" src="';
+    if (favorito) {
+        lista = lista + 'img/fav.png">';
+    } else lista = lista + 'img/nofav.png">';
+    lista = lista + '</li> </ul>';
+    insertarCadena(posicion, lista);
+}
 
 function insertarCadena(element, html) {
     var frag = document.createDocumentFragment(),
@@ -46,7 +56,6 @@ function insertarCadena(element, html) {
     frag = tmp = null;
 }
 var cargar = function () {
-    var caca = '<h3 class="topcoat-list__header">Antena 3</h3>';
     var divCanales = document.getElementById("canales");
     var leido = JSON.parse(programas);
 
@@ -54,9 +63,9 @@ var cargar = function () {
     for (i = 0; i < leido.length; i++) {
         console.log(1);
         console.log(leido[i]);
-        header(divCanales, 'caca');
-        console.log(divCanales);
-        //        insertarCadena(divCanales, caca);
+         console.log(divCanales);
+        insertHeader(divCanales, 'caca'); 
+        insertElementoLista(divCanales,leido[i].nombre, "img/lasexta.png", leido[i].favorito);
         console.log(divCanales);
     }
 };
