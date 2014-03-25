@@ -13,3 +13,5 @@ css/estilos.min.css
 css/estilos.css
 css/_flex.scss
 js/a3media.min.js
+css/_responsive.scss
+js/Ractive.js
