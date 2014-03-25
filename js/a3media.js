@@ -26,3 +26,13 @@ var volver = function(){
     $("#barraBotones").show();
     this.verCanales();
 }
+var programas ='[{ "nombre" : "La que se avecina", "favorito" : false, "emision" : "ahora"},{ "nombre" : "Salvados", "favorito" : false, "emision" : "mañana"}]'
+var cargar = function(){
+	var divCanales = document.getElementById("canales");
+		var leido = JSON.parse(programas);
+		console.log(leido);
+	for ( i = 0; i < leido.length; i++){
+	console.log("aaa"+leido[i]);
+	divLeido.appendChild("<p> " + leido[i].favorito + " </p>");
+	}
+}
