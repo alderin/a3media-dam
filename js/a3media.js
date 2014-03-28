@@ -26,7 +26,7 @@ var volver = function () {
     $("#barraBotones").show();
     this.verCanales();
 };
-var programas = '[{ "nombre" : "La que se avecina", "favorito" : false, "emision" : "ahora"},{ "nombre" : "Salvados", "favorito" : true, "emision" : "mañana"}]';
+var programas = '[{ "nombre" : "La que se avecina", "favorito" : false, "imageSrc" : "img/lasexta.png", "emision" : "ahora"},{ "nombre" : "Salvados", "favorito" : true, "imageSrc" : "img/ATRESMEDIA.png","emision" : "mañana"}]';
 
 function insertHeader(posicion, nombre) {
     var header = '<h3 class="topcoat-list__header">' + nombre + '</h3>';
@@ -65,7 +65,7 @@ var cargar = function () {
         console.log(leido[i]);
          console.log(divCanales);
         insertHeader(divCanales, 'caca'); 
-        insertElementoLista(divCanales,leido[i].nombre, "img/lasexta.png", leido[i].favorito);
+        insertElementoLista(divCanales,leido[i].nombre, leido[i].imageSrc, leido[i].favorito);
         console.log(divCanales);
     }
 };
