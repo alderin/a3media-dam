@@ -55,12 +55,14 @@ function insertarCadena(element, html) {
     element.appendChild(frag); // Now, append all elements at once
     frag = tmp = null;
 }
+var ractive;
+var leido;
 var cargar = function () {
     var divCanales = document.getElementById("canales");
-    var leido = JSON.parse(programas);
+   leido = JSON.parse(programas);
 
-    var ractive = new Ractive({
-        el: '#canales',
+    ractive = new Ractive({
+        el: '.topcoat-list',
         template: '#canales',
         data: {
             canales: leido
