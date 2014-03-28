@@ -8,7 +8,7 @@
     <link href="css/estilos.css" rel="stylesheet">
     <link rel="stylesheet" href="font/icomatic.css" />
     <script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/Ractive.js"></script>
+	
     <script src="js/a3media.js"></script>
 </head>
 
@@ -54,14 +54,21 @@
     <div class="topcoat-list list" id="canales">
         <h3 class="topcoat-list__header">Antena 3</h3>
         <ul class="topcoat-list__container">
-            <li class="topcoat-list__item">
+            {{#canales}}
+            <li class="topcoat-list__item">                
                 <img class="imgIzquierda" src="img/Antena3_Atresmedia.png">
-                <h3 class="contenido-canal center">La que se avecina
+                <h3 class="contenido-canal center">{{nombre}}
                     <br>
                     <br>Emisión: Ahora
                 </h3>
+                {{#favorito}}
+                <img class="imgDerecha" src="img/fav.png">
+                {{/favorito}}
+                {{^favorito}}
                 <img class="imgDerecha" src="img/nofav.png">
+                {{/favorito}}
             </li>
+            {{/canales}}
         </ul>
         <h3 class="topcoat-list__header">La Sexta</h3>
         <ul class="topcoat-list__container">
@@ -133,7 +140,7 @@
         </div>
 
     </div>
-	
+	<script src="js/Ractive.js"></script>
 </body>
 
 </html>

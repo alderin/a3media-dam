@@ -59,13 +59,15 @@ var cargar = function () {
     var divCanales = document.getElementById("canales");
     var leido = JSON.parse(programas);
 
+    var ractive = new Ractive({
+        el: '#canales',
+        template: '#canales',
+        data: {
+            canales: leido
+        }
+    });
     console.log(leido);
     for (i = 0; i < leido.length; i++) {
-        console.log(1);
-        console.log(leido[i]);
-         console.log(divCanales);
-        insertHeader(divCanales, 'caca'); 
-        insertElementoLista(divCanales,leido[i].nombre, leido[i].imageSrc, leido[i].favorito);
-        console.log(divCanales);
+
     }
 };
